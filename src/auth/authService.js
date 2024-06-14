@@ -1,6 +1,6 @@
 
 //I set up this utility to retrieve users from local storage for now
-const getUsersFromLocalStorage = () => {
+const getUsersFromLocalStoragesFromLocalStorage = () => {
     const users = localStorage.getItem('users');
     return users ? JSON.parse(users) : [];
 };
@@ -48,3 +48,4 @@ export const loginUser = (email, password) => {
 export const logoutUser = () => {
     localStorage.removeItem('token');
 };
+
