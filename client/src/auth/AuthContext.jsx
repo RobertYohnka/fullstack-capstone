@@ -27,9 +27,9 @@ const AuthProvider = ({ children }) => {
         }
     };
 
-    const login = async (email, password) => {
+    const login = (email, password) => {
         try {
-            const { user, token } = await loginUser(email, password);
+            const { user, token } = loginUser(email, password);
             setUser(user);
             setToken(token);
             setIsAuthenticated(true);
